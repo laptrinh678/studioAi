@@ -1,0 +1,32 @@
+[
+    {
+        "label": "Mặc định",
+        "value": "none",
+        "instance_prompt": ""
+    },
+    {
+        "label": "Ảnh chi tiết",
+        "value": "extremely detailed",
+        "instance_prompt": "extremely detailed"
+    },
+    {
+        "label": "Chữ hiệu ứng",
+        "value": "pixel-art-xl",
+        "instance_prompt": "pixel art"
+    },
+    {
+        "label": "Thêm chi tiết",
+        "value": "add-detail-xl",
+        "instance_prompt": ""
+    },
+    {
+        "label": "Thô",
+        "value": "raw",
+        "instance_prompt": "extremely detailed"
+    },
+    {
+        "label": "Logo",
+        "value": "LogoRedmondV2-Logo-LogoRedmAF",
+        "instance_prompt": "LogoRedAF"
+    }
+]

@@ -1,0 +1,13 @@
+export const STATUS_RTSP        = 'status_rtsp'
+export const STATUS_INTEGRATION = 'status_integration'
+export const STATUS_CORE_AI     = 'status_core_ai'
+export const STATUS_STREAM      = 'status_stream'
+export const STATUS_NO_EVENT    = 'status_no_event'
+export const STATUS_UNSEND_FILE = 'status_unsend_file'
+
+export const STATUS_RTSP_TXT        = 'Kết nối RTSP'
+export const STATUS_INTEGRATION_TXT = 'Tích hợp'
+export const STATUS_CORE_AI_TXT     = 'Module AI'
+export const STATUS_STREAM_TXT      = 'Camera stream'
+export const STATUS_NO_EVENT_TXT    = 'Sinh sự kiện'
+export const STATUS_UNSEND_FILE_TXT = 'Truyền file'

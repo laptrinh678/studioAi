@@ -1,0 +1,39 @@
+.frameVideo {
+    background-color: $white;
+    border-radius: 25px !important;
+    margin-bottom: 25px !important;
+
+    video {
+        border-radius: 20px !important;
+        padding: 5px !important;
+    }
+    .m-portlet__head {
+        height: 0px;
+    }
+    .m-portlet__body {
+        padding: 0px!important;
+        margin-bottom: 20px;
+        padding-bottom: 28px;
+    }
+
+    #img-modal {
+        video{
+            width: 387.5px;
+            height: 210px;
+        }
+    }
+
+    .content {
+        font-family: Averta;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        padding: 28px 10px 0px 10px;
+        height: 120px;
+        border-bottom-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+    }
+}

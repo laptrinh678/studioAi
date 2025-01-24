@@ -1,0 +1,252 @@
+{
+    "common": {
+        "nav_bar": {
+            "gen_image": "Sinh ảnh"
+        },
+        "form_config": {
+            "title": "Nhập Prompt",
+            "result": "Kết quả",
+            "config": "Cấu hình",
+            "prompt_input": "Nhập prompt mô tả ảnh",
+            "description_input": "Nhập mô tả",
+            "num_images": "Số lượng ảnh",
+            "guidance_scale": "Độ sáng tạo",
+            "seed": "Mức độ đa dạng",
+            "control_mode": "Control Mode",
+            "prompt_style": "Phong cách",
+            "image_size": "Kích thước ảnh",
+            "main_color": "Màu chủ đạo",
+            "description_main_color": "Nhập màu chủ đạo",
+            "scale": "Mức độ phóng đại ảnh",
+            "width": "Chiều rộng",
+            "height": "Chiều cao",
+            "image_width": "Chiều rộng",
+            "image_height": "Chiều cao",
+            "name_voice": "Giọng đọc",
+            "name_mc": "Tên MC",
+            "upload_image": "Kéo thả file hoặc click để tải ảnh",
+            "upload_voice": "Tải giọng nói",
+            "record": "Ghi âm giọng nói",
+            "start_record": "Bắt đầu ghi âm",
+            "end_record": "Dừng ghi âm",
+            "select_mc": "Chọn phát thanh viên",
+            "text_input": "Nhập nội dung văn bản",
+            "sound_input": "Chọn giọng đọc",
+            "create_video": "Tạo video",
+            "create_image": "Tạo ảnh",
+            "guidance_scale_option": ["Tự do", "Gần khớp", "Rất khớp"],
+            "seed_option": ["Cố định", "Ngẫu nhiên"],
+            "prompt_style_option": ["Mặc định", "Ảnh truyện tranh", "Ảnh hoạt hình", "Ảnh thực tế", "Ảnh phong cảnh", "Ảnh viễn tưởng", "Ảnh tranh vẽ", "Ảnh đơn sắc"],
+            "control_mode_option": ["Mô phỏng nét chính", "Mô phỏng toàn cảnh sáng tạo", "Mô phỏng 3D", "Mô phỏng phong cách hoạt hình đơn giản", "Mô phỏng tư thế", "Mô phỏng phong cách hoạt hình sáng tạo", "Mô phỏng toàn cảnh"],
+            "openAI": "Sử dụng OpenAI để tối ưu prompt"
+        },
+        "region": {
+            "norther": "Miền Bắc",
+            "central": "Miền Trung",
+            "southern": "Miền Nam"
+        },
+        "hint": {
+            "seed": "Làm đa dạng các bức ảnh khi các thông số khác không thay đổi. Nếu chọn Ngẫu nhiên thì bức ảnh sinh ra sẽ thay đổi, chọn Cố định thì ảnh sinh ra sẽ không thay đổi.",
+            "guidance_scale": "Là mức độ khớp của ảnh sinh ra so với mô tả của người dùng.",
+            "control_mode": "Là các thuật toán khác nhau để tạo ra bức ảnh mới từ ảnh đầu vào.",
+            "main_color": "Phần mềm sẽ ưu tiên sử dụng màu này khi sinh ra bức ảnh.",
+            "prompt_style": "Cho phép lựa chọn các loại ảnh đầu ra: Ảnh truyện tranh, ảnh hoạt hình, ảnh phong cảnh, ảnh đơn sắc v.v.."
+        },
+        "detail": "Chi tiết",
+        "confirm": "Đồng ý",
+        "cancel": "Hủy",
+        "total": "Tổng",
+        "choose_language": "Chọn ngôn ngữ",
+        "user_info": "Thông tin cá nhân",
+        "confirm_delete": "Bạn có chắc muốn xóa ảnh này?",
+        "search": "Tìm kiếm",
+        "content_type": ["Văn bản", "Tải file", "Ghi âm"],
+        "upload_file_mp3": "Tải file .mp3",
+        "warning_file_duration": "Lưu ý: Chỉ tải file có thời lượng tối đa là {maxDuration} giây",
+        "warning_record_duration": "Lưu ý: Thời lượng ghi âm tối đa là {maxDuration} giây",
+        "estimate": "Ước tính",
+        "content_required": "Nội dung văn bản không được để trống.",
+        "file_required": "Nội dung file không được để trống.",
+        "record_required": "Nội dung file record không được để trống.",
+        "limit_file_time": "Thời lượng file không được quá {maxDuration} giây",
+        "limit_resolution": "Kích thước ảnh tối đa là ({width}x{height})",
+        "no_micro_device": "Không tìm thấy thiết bị ghi âm.",
+        "save_scene": "LƯU PHÂN CẢNH",
+        "delete": "Xóa",
+        "edit": "Chỉnh sửa",
+        "update": "Cập nhật",
+        "video_info": "Thông tin video",
+        "loading": "Đang xử lý",
+        "update_success": "Cập nhật thành công.",
+        "save_success": "Lưu thành công.",
+        "delete_success": "Xóa thành công.",
+        "text_too_long": "Ký tự vượt quá giới hạn. Kiểm tra lại thông tin.",
+        "prompt_required": "Prompt không được để trống.",
+        "image_required": "Bạn chưa chọn ảnh.",
+        "stroke_required": "Ảnh phác thảo trống.",
+        "mask_required": "Vui lòng đánh dấu vùng chỉnh sửa ảnh.",
+        "catch_exception": "Đã có lỗi xảy ra. Vui lòng thử lại.",
+        "logout": "Đăng xuất",
+        "max_width": "Chiều dọc tối đa",
+        "max_height": "Chiều ngang tối đa",
+        "warning": "Cảnh báo",
+        "warning_voice": "Giọng đọc không phù hợp với MC.",
+        "copy_to_clipboard": "Sao chép đường dẫn",
+        "copied": "Đã sao chép"
+    },
+    "warning_permission": "Bạn không có quyền sử dụng tính năng này. Vui lòng liên hệ với quản trị viên để được cấp quyền. Thông tin liên hệ: {gmail}",
+    "text_to_image": {
+        "title": "Sinh ảnh từ văn bản"
+    },
+    "image_to_image": {
+        "title": "Sinh ảnh tương tự"
+    },
+    "in_painting": {
+        "title": "Chỉnh sửa chi tiết"
+    },
+    "sketch": {
+        "title": "Sinh ảnh từ phác thảo",
+        "upload": "Upload ảnh phác thảo",
+        "draw": "Vẽ ảnh phác thảo"
+    },
+    "scale_image": {
+        "title": "Tăng độ phân giải"
+    },
+    "mc_background": {
+        "title": "MC ảo (Phông xanh)"
+    },
+    "mc_scene": {
+        "watch_video": "xem video",
+        "limit_duration": "Tổng thời lượng không được quá {maxDuration} giây",
+        "title": "MC ảo theo kịch bản",
+        "scene": {
+            "info": "Thông tin phân cảnh",
+            "create": "Thêm mới phân cảnh",
+            "name": "Tên phân cảnh",
+            "name_input": "Nhập tên phân cảnh",
+            "name_required": "Tên phân cảnh không được để trống.",
+            "duration_input": "Độ dài phân cảnh (giây)",
+            "min_duration": "Thời gian phân cảnh tối thiểu là 1 giây.",
+            "max_duration": "Thời gian phân cảnh tối đa là {maxDuration} giây.",
+            "confirm_delete": "Bạn có chắc muốn xóa phân cảnh không?",
+            "max_scene": "Chỉ có thể tạo tối đa 10 phân cảnh"
+        },
+        "project": {
+            "title": "Dự án",
+            "list": "Danh sách dự án",
+            "create": "Tạo dự án",
+            "is_delete": "Bạn muốn xóa dự án không?",
+            "create_title": "Thêm mới dự án",
+            "name_input": "Nhập tên dự án",
+            "name": "Tên dự án",
+            "name_required": "Tên dự án không được để trống.",
+            "name_max_length": "Tên dự án không dài quá 30 ký tự",
+            "delete_success": "Xóa dự án thành công.",
+            "warning_save_project": "Các thay đổi chưa được lưu lại. Bạn vẫn muốn thực hiện chứ?"
+        },
+        "mc": {
+            "title": "MC",
+            "list": "Danh sách MC",
+            "required": "Không tìm thấy MC"
+        },
+        "content": {
+            "title": "Nội dung",
+            "list": "Danh sách nội dung",
+            "content_input": "NỘI DUNG ĐỌC",
+            "apply": "ÁP DỤNG",
+            "required": "Nội dung không được để trống.",
+            "invalid_format": "File tải lên sai định dạng.",
+            "voice": "GIỌNG ĐỌC"
+        },
+        "background": {
+            "title": "Hình nền",
+            "list": "Danh sách hình nền",
+            "select_background": "Chọn ảnh",
+            "select_image": "Chọn hình ảnh",
+            "warning": "Lưu ý: Chọn ảnh (1280x720) để cho kết quả tốt nhất."
+        },
+        "text": {
+            "title": "Văn bản",
+            "create": "Thêm tiêu đề",
+            "input": "Nhập văn bản"
+        },
+        "image_asset": {
+            "title": "Kho ảnh",
+            "list": "Danh sách ảnh tải lên",
+            "select_image_asset": "Quản lý kho ảnh",
+            "apply": "ÁP DỤNG",
+            "cancel": "HỦY BỎ",
+            "list_upload": "DANH SÁCH HÌNH ẢNH",
+            "limit": "Lưu trữ tối đa {maxImage} hình ảnh",
+            "validate": {
+                "file_format": "Chỉ tải file ảnh định dạng (.png, .jpg, .jpeg)",
+                "file_size": "Kích thước file quá lớn, tối đa 4MB.",
+                "max_upload": "Chỉ được tải lên tối đa {maxUploadFile} file."
+            }
+        }
+    },
+    "landing_page": {
+        "reused": "Lượt sử dụng",
+        "view": "Lượt xem",
+        "like": "Lượt thích",
+        "share": "Lượt chia sẻ",
+        "clone": "Dùng mẫu này",
+        "share_link": "Chia sẻ liên kết"
+    },
+    "user_management": {
+        "left_bar": {
+            "permission": "Phân quyền",
+            "prompt": "Thông tin prompt"
+        },
+        "form": {
+            "email_input": "Nhập địa chỉ email",
+            "confirm_delete": "Bạn có chắc chắn xóa không?",
+            "permission_title": "Các quyền được cấp",
+            "select_all": "Chọn tất cả",
+            "available_date": "Thời gian sử dụng",
+            "from_date": "Từ Ngày",
+            "to_date": "Đến ngày",
+            "prompt_input": "Nhập nội dung prompt"
+        },
+        "title": "Quản lý người dùng",
+        "user": "Người dùng",
+        "permission_management": "Phân quyền người dùng",
+        "user_prompt_management": "Prompt từ người dùng",
+        "email_info": "Thông tin email",
+        "email": "Địa chỉ email",
+        "name": "Tên",
+        "no": "STT",
+        "phone_number": "Số điện thoại",
+        "permission": "Quyền truy cập",
+        "day": "Ngày",
+        "prompt_style": "Phong cách prompt",
+        "date_time": "Thời gian",
+        "no_data": "Không có dữ liệu",
+        "date_required": "Thời gian sử dụng không được để trống.",
+        "date_invalid": "Ngày kết thúc không được nhỏ hơn hiện tại.",
+        "start_gt_end": "Ngày bắt đầu không được lớn hơn ngày kết thúc.",
+        "detail_info": "Thông tin chi tiết",
+        "text_to_image": "Từ văn bản",
+        "image_to_image": "Chỉnh sửa hình ảnh",
+        "virtual_human": "Phát thanh viên ảo",
+        "virtual_human_v2": "Phát thanh viên ảo V2",
+        "prompt_original": "Prompt nguyên bản",
+        "prompt_translate": "Prompt đã dịch",
+        "prompt_open_ai": "Prompt sử dụng OpenAI",
+        "type": "Kỹ thuật xử lý",
+        "execute_time": "Thời gian xử lý (giây)",
+        "status_code": "Mã trạng thái",
+        "prompt_content": "Nội dung prompt",
+        "time": "Thời gian xử lý",
+        "placeholder_generate_type": "Chọn kỹ thuật xử lý",
+        "placeholder_status_code": "Chọn mã trạng thái",
+        "time_error": "Thời gian không hợp lệ"
+    },
+    "error": {
+        "503": {
+            "title": "Hệ thống đang được nâng cấp",
+            "message_1": "Xin hãy quay lại sử dụng sau khoảng 1 giờ nữa!",
+            "message_2": "Mong các bạn thông cảm"
+        }
+    }
+}

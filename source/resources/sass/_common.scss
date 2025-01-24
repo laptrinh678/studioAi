@@ -1,0 +1,98 @@
+$namespace: 'xmx';
+$default-color: #555;
+$primary-color: #1284e7;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    .flatpickr-calendar {
+        .flatpickr-current-month {
+            font-size: 15px;
+        }
+        .numInputWrapper {
+            width: 4ch !important;
+        }
+    }
+}
+//Color
+@each $s, $i in $colors {
+    .bg-#{$s} {
+        background-color: #{$i} !important;
+
+        &:not([disabled]) {
+            &.hover:hover {
+                filter: brightness(110%);
+                transition: all 0.1s ease-in-out;
+            }
+
+            &.focusable:focus {
+                filter: brightness(110%);
+            }
+        }
+    }
+    .color-#{$s} {
+        color: #{$i} !important;
+
+        &.hover:hover {
+            color: lighten($i, 20%) !important;
+            cursor: pointer;
+        }
+    }
+    .border-color-#{$s} {
+        border-color: #{$i} !important;
+    }
+    @each $d in $directions {
+        .bg-gradient-#{$d}--#{$s} {
+            background-image: linear-gradient(to $d, darken($i, 20%), lighten($i, 20%));
+        }
+    }
+}
+
+@for $i from 0 through 100 {
+    .br--#{$i} {
+        border-radius: 1px * $i !important;
+    }
+    .font-#{$i} {
+        font-size: 1px * $i !important;
+    }
+    .width-#{$i} {
+        width: 10px * $i !important;
+    }
+    .height-#{$i} {
+        height: 10px * $i !important;
+    }
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #cccccc;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+    display: none;
+}

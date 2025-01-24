@@ -1,0 +1,773 @@
+@import "./variables";
+// @import "./common";
+@import "./genarate-ai.scss";
+
+button.el-button--danger {
+    background-color: $red !important;
+
+    &:hover {
+        opacity: 0.5;
+    }}
+
+.invalid-feedback {
+    color: $red_lighten !important;
+}
+
+//.dialog-footer button:first-child {
+//    margin-right: 10px;
+//}
+
+.btn-custom {
+    width: 120px;
+    &:not(.paginate) {
+        font-weight: 700 !important;
+    }
+
+    &:disabled:not(.is-loading) {
+        background-color: $dark !important;
+    }
+}
+
+.dialog-responsive {
+    .el-dialog {
+        @media only screen and (max-width: 767px) {
+            width: 80% !important;
+        }
+        @media only screen and (min-width: 768px) {
+            width: 30% !important;
+        }
+    }
+}
+
+.data-table {
+    border-radius: 20px;
+    padding: 1px;
+
+    thead {
+        background: $red;
+
+        tr {
+            th {
+                color: $white;
+                text-transform: inherit;
+                font-weight: 700;
+                font-size: 14px;
+                text-align: center;
+
+                &:first-child {
+                    border-top-left-radius: 20px;
+                }
+                &:last-child {
+                    border-top-right-radius: 20px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            text-align: center;
+
+            &:last-child {
+                td {
+                    &:first-child {
+                        border-bottom-left-radius: 20px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.form-floating {
+    margin-bottom: 25px;
+
+    label {
+        padding-bottom: 0.75rem !important;
+        color: $gray !important;
+        background-color: transparent;
+    }
+
+    input {
+        height: 48px !important;
+
+        &.form-control {
+            border: 1px solid $gray_lighten !important;
+
+            &:focus {
+                padding-top: 0.625rem !important;
+                border-color: $gray !important;
+                box-shadow: none !important;
+            }
+
+            &:not(:placeholder-shown) {
+                padding-top: 0.625rem !important;
+            }
+
+            &:focus, &:not(:placeholder-shown) {
+                ~ label {
+                    opacity: 1 !important;
+                    height: auto;
+                    width: auto !important;
+                    transform: scale(0.85) translateY(-2rem) translateX(1rem) !important;
+                    background: $white !important;
+                }
+            }
+        }
+
+        &.required {
+            ~ label:after {
+                content: " *";
+                color: $white;
+            }
+        }
+    }
+}
+
+.select_custom {
+    position: relative;
+    margin-bottom: 25px;
+
+    .el-input {
+        min-height: 48px !important;
+    }
+
+    label {
+        position: absolute;
+        color: $gray;
+        transition: transform 0.1s ease-in-out;
+        background: $white;
+    }
+
+    .el-select {
+        width: 100%;
+        input {
+            padding-left: 0 !important;
+        }
+
+        &:not(.show_placeholder) {
+            input {
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .el-input__wrapper {
+            padding-left: 0 !important;
+        }
+        ~ label {
+            padding-left: 0.75rem;
+            top: 1rem;
+            left: 1px;
+            overflow: hidden;
+            text-align: start;
+            text-overflow: ellipsis;
+            transform: translateY(0px);
+        }
+
+        &.is_focus ~ label,
+        ~ label.has-value {
+            transform: scale(0.85) translateY(-2rem) translateX(0.2rem);
+            padding: 0 0.75rem;
+        }
+    }
+
+    &:active, &:focus {
+        label {
+            transform: scale(0.85) translateY(-2rem) translateX(0.2rem);
+            padding: 0 0.75rem;
+        }
+    }
+}
+
+.el-radio {
+    color: $dark_lighten_2 !important;
+    font-weight: bold !important;
+
+    .el-radio__inner {
+        background-color: transparent !important;
+    }
+    .el-radio__input.is-checked {
+        .el-radio__inner {
+            background-color: $white !important;
+            border-color: $dark !important;
+
+            &::after {
+                background-color: $dark !important;
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        &+.el-radio__label {
+            color: $dark_lighten_2 !important;
+        }
+    }
+
+    span {
+        color: $dark_lighten_2 !important;
+    }
+}
+
+.el-radio-button__inner {
+    font-weight: bold !important;
+}
+
+.dark-theme {
+    #navbar, #sidebar, .main-content, .m-portlet {
+        background-color: $dark;
+    }
+
+    #navbar {
+        border-bottom: 1px solid $gray_darken !important;
+
+        .nav-item {
+            .nav-link.active {
+                background: transparent !important;
+            }
+        }
+
+        .page-title {
+            color: $gray;
+            background-color: $dark;
+        }
+    }
+
+    #sidebar {
+        box-shadow: unset;
+
+        a.active span {
+            color: $red;
+        }
+        a span {
+            color: $gray;
+        }
+    }
+
+    #profile {
+        background-color: $dark_lighten;
+
+        &::before {
+            background-color: $dark_lighten;
+        }
+
+        span {
+            color: $gray !important;
+            &:hover {
+                color: $blue !important;
+            }
+        }
+    }
+
+    select {
+        background-color: $white;
+        border-color: $gray;
+        color: $dark_lighten;
+    }
+
+    .select_per_page {
+        .el-input__wrapper {
+            background-color: $dark;
+            box-shadow: 0 0 0 1px $white inset !important;
+
+            &.is-focus {
+                box-shadow: 0 0 0 1px $white inset !important;
+            }
+        }
+
+        input {
+            color: $gray;
+            border-color: $gray;
+        }
+    }
+
+    .m-portlet {
+        margin-bottom: 0 !important;
+
+        .m-portlet__head {
+            // display: none;
+            border-bottom: 0;
+            &-text {
+                color: $gray !important;
+                font-size: 20px !important;
+            }
+        }
+        .m-portlet__body {
+            padding-top: 1.2rem;
+            padding-bottom: 0 !important;
+        }
+    }
+
+    .frameVideo {
+        background-color: $dark_lighten !important;
+        video, .content {
+            background-color: $dark_lighten !important;
+        }
+        .content {
+            color: $gray;
+        }
+    }
+
+    .data-table {
+        select[name="per_page"] {
+            width: 70px !important;
+        }
+
+        input {
+            background-color: $dark;
+            color: $gray;
+        }
+
+        .dt__pagination_wrapper--bottom, .dt__pagination {
+            background-color: $dark !important;
+            box-shadow: unset !important;
+
+            p {
+                color: $gray !important;
+            }
+
+            .dt__pagination__nav {
+                a {
+                    background-color: $dark !important;
+                    border: 1px solid $gray_darken !important;
+                    color: $white !important;
+                    text-decoration: none;
+
+                    &.dt-text-gray-500 {
+                        color: $gray_darken !important;
+                    }
+
+                    &:hover {
+                        background-color: $dark_lighten !important;
+                    }
+                }
+            }
+        }
+
+        tbody tr {
+            background-color: $dark_lighten;
+            &:hover {
+                opacity: 0.9;
+            }
+
+            td {
+                color: $gray;
+            }
+        }
+    }
+
+    .el-pagination {
+        button, li {
+            background-color: $blue_lighten !important;
+        }
+
+        li:not(.is-active) {
+            color: $white !important;
+            background-color: #303030 !important;
+        }
+
+        button {
+            color: $white !important;
+            &:disabled {
+                display: none !important;
+            }
+        }
+
+        button.btn-prev, button.btn-next {
+            background-color: #303030 !important;
+        }
+    }
+
+    .el-dialog {
+        background-color: $dark_lighten;
+
+        .el-dialog__header span {
+            color: $white;
+            font-weight: 700;
+        }
+    }
+
+    .form-floating:not(.light-theme):not(.dark_lighten_2-theme) {
+        margin-bottom: 25px;
+
+        label {
+            color: $gray !important;
+        }
+
+        input {
+            background-color: $dark_lighten;
+            color: $white;
+
+            &.form-control {
+                border-color: $gray_darken !important;
+
+                &:focus {
+                    border-color: $gray_lighten !important;
+                }
+
+                &:focus, &:not(:placeholder-shown) {
+                    ~ label {
+                        background: $dark_lighten !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-floating.dark_lighten_2-theme {
+        margin-bottom: 25px;
+
+        label {
+            color: $gray !important;
+        }
+
+        input {
+            background-color: $dark_lighten_2;
+            color: $white;
+
+            &.form-control {
+                border-color: $gray_darken !important;
+
+                &:focus {
+                    border-color: $gray_lighten !important;
+                }
+
+                &:focus, &:not(:placeholder-shown) {
+                    ~ label {
+                        background: $dark_lighten_2 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .select_custom {
+        &:hover:not(.el-select--disabled) .el-input__wrapper {
+            box-shadow: unset !important;
+        }
+
+        label, .el-input__wrapper {
+            background-color: $dark_lighten;
+        }
+
+        .el-tag {
+            background-color: $dark_lighten_2;
+            color: $gray;
+        }
+
+        .el-input {
+            &.is-focus {
+                .el-input__wrapper {
+                    box-shadow: unset !important;
+                    border: 1px solid $gray;
+                }
+            }
+
+            .el-input__wrapper {
+                border: 1px solid $gray_darken;
+                box-shadow: unset;
+
+                &.is-focus {
+                    box-shadow: unset !important;
+                    border: 1px solid $gray;
+                }
+            }
+        }
+    }
+
+    .el-date-editor--datetimerange {
+        background-color: $dark_lighten !important;
+
+        input {
+            color: $gray;
+        }
+
+        .el-range-separator {
+            color: $gray;
+        }
+    }
+
+    .el-popper {
+        border-radius: 0 !important;
+
+        .el-select-dropdown {
+            box-shadow: 0 0 11px $gray_darken;
+        }
+        li, .el-select-dropdown__wrap {
+            background-color: $white;
+        }
+
+        li {
+            &:hover {
+                background-color: $red !important;
+                opacity: 1 !important;
+                span {
+                    color: white !important;
+                }
+            }
+            &.selected {
+                span {
+                    color: $red;
+                }
+            }
+
+            &::after {
+                background-color: $white !important;
+            }
+
+            span {
+                color: $dark_lighten_2;
+                font-family: "FS Magistral Book", sans-serif;
+                font-size: 15px;
+            }
+        }
+
+        li.font-arial > span {
+            font-family: Arial, sans-serif;
+        }
+
+        li.font-serif > span {
+            font-family: Serif, sans-serif;
+        }
+
+        li.font-monospace > span {
+            font-family: monospace, sans-serif;
+        }
+
+        // DateTimeRangePicker
+        &.el-picker__popper {
+            border-color: $dark_lighten_2;
+        }
+        .el-date-picker__header {
+            margin-top: 0;
+            padding-top: 12px;
+
+            .el-picker-panel__icon-btn {
+                color: #e5eaf3;
+            }
+        }
+        .el-year-table {
+            td.current:not(.disabled) {
+                .cell {
+                    color: $white;
+                }
+            }
+        }
+        .el-date-range-picker, .el-date-picker {
+            thead, tbody, tfoot, tr, th {
+                border-color: $dark_lighten_2;
+            }
+
+            tbody {
+                tr {
+                    &:not(.el-date-table__row) th {
+                        color: $gray;
+                        text-align: center;
+                    }
+
+                    td {
+                        &.available {
+                            &:hover {
+                                color: $red !important;
+                            }
+                            &.today span {
+                                color: $red !important;
+                            }
+
+                            &.in-range {
+                                .el-date-table-cell {
+                                    background-color: $dark_lighten_2 !important;
+                                }
+
+                                &.start-date span,
+                                &.end-date span {
+                                    background-color: $white !important;
+                                    color: $red !important;
+                                }
+                            }
+                        }
+
+                        &.disabled {
+                            .el-date-table-cell {
+                                background-color: $dark_lighten;
+                                span {
+                                    color: $dark_lighten_2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .el-picker-panel__body-wrapper {
+                .el-picker-panel__sidebar {
+                    background-color: $dark_lighten;
+                    border-color: $dark_lighten_2;
+                    width: 110px !important;
+
+                    button {
+                        color: $gray;
+
+                        &:hover {
+                            color: $red !important;
+                        }
+                    }
+                }
+
+                .el-picker-panel__body {
+                    background-color: $dark_lighten;
+                    color: $gray;
+
+                    .el-date-range-picker__time-header {
+                        .el-time-panel__content {
+                            ul {
+                                background-color: $dark_lighten;
+
+                                li {
+                                    color: $gray;
+
+                                    &.is-active {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                        .el-time-panel__footer {
+                            background-color: $dark_lighten;
+                            border-color: $dark_lighten_2;
+
+                            button {
+                                &.cancel {
+                                    color: $gray;
+                                }
+
+                                &.confirm {
+                                    color: $red !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .el-date-range-picker__header {
+                        button {
+                            margin-top: 0;
+                            color: $white;
+                        }
+                    }
+
+                    .el-input__wrapper {
+                        background-color: $dark_lighten_2;
+                        box-shadow: unset;
+
+                        .el-input__inner {
+                            color: $gray;
+                        }
+                    }
+
+                    .is-left {
+                        border-color: $dark_lighten_2;
+                    }
+                }
+            }
+
+            .el-picker-panel__footer {
+                background-color: $dark_lighten;
+                border-color: $dark_lighten_2;
+
+                button.is-text {
+                    color: $gray;
+                }
+            }
+        }
+        // End DateTimeRangePicker
+    }
+
+    .el-popper .is-dark {
+        width: 100px;
+    }
+
+    // Cấu hình vi phạm
+    .select-label {
+        input {
+            color: $gray;
+            margin-left: 10px !important;
+        }
+    }
+
+    .radio-group-custom {
+        label {
+            span {
+                background-color: transparent !important;
+                color: $gray !important;
+                border-color: $gray_lighten_2 !important;;
+            }
+
+            &.is-active {
+                span {
+                    background-color: $red !important;
+                    color: $white !important;
+                    // border: 1px solid $red !important;
+                    border-color: $gray_lighten_2 !important;
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+
+    // Undo, redo, zoomin, zoomout
+    .group-button {
+        button {
+            background: transparent !important;
+            border-color: $gray_darken !important;
+
+            span {
+                color: $gray !important;
+            }
+
+            &.is-disabled {
+                border-color: $dark_lighten_2 !important;
+
+                span {
+                    color: $dark_lighten_2 !important;
+                }
+            }
+        }
+    }
+    // End Cấu hình vi phạm
+}
+
+// change color img png
+img {
+    &.white {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(227deg) brightness(105%) contrast(104%);
+    }
+    &.gray {
+        filter: invert(76%) sepia(0%) saturate(0%) hue-rotate(81deg) brightness(96%) contrast(92%);
+    }
+    &.gray_lighten {
+        filter: invert(100%) sepia(0%) saturate(728%) hue-rotate(199deg) brightness(117%) contrast(76%);
+    }
+    &.red {
+        filter: invert(13%) sepia(93%) saturate(7333%) hue-rotate(344deg) brightness(99%) contrast(107%);
+    }
+    &.orange {
+        filter: invert(75%) sepia(40%) saturate(1353%) hue-rotate(325deg) brightness(98%) contrast(93%);
+    }
+    &.green {
+        filter: invert(77%) sepia(15%) saturate(977%) hue-rotate(92deg) brightness(91%) contrast(99%);
+    }
+}
+
+.el-color-picker__trigger {
+    border: 0 !important;
+}
+
+.el-select__caret {
+    font-size: 16px !important;
+}

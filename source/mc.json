@@ -1,0 +1,38 @@
+[
+  {
+    "label": "hanhvt41",
+    "src": "/images/mc_1.png",
+    "name": "Vũ Thị Hạnh",
+    "sex": "female"
+  },
+  {
+    "label": "chaunpb",
+    "src": "/images/mc_2.png",
+    "name": "Nguyễn Phùng Bảo Châu",
+    "sex": "female"
+  },
+  {
+    "label": "vandt36",
+    "src": "/images/mc_3.png",
+    "name": "Đặng Thanh Vân",
+    "sex": "female"
+  },
+  {
+    "label": "giangh",
+    "src": "/images/mc_4.png",
+    "name": "Hoàng Giang",
+    "sex": "male"
+  },
+  {
+    "label": "hoaimt",
+    "src": "/images/mc_5.png",
+    "name": "Mai Thu Hoài",
+    "sex": "female"
+  },
+  {
+    "label": "anhnkn",
+    "src": "/images/mc_6.png",
+    "name": "Nguyễn Khả Ngọc Anh",
+    "sex": "male"
+  }
+]

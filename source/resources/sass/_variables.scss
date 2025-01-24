@@ -1,0 +1,170 @@
+$dark: #222222;
+$dark_lighten: #373737;
+$dark_lighten_2: #4F4F4F;
+$dark_lighten_3: #353535;
+$dark_lighten_4: #44494d;
+$blue: #0d6efd;
+$blue_darken: #4359F0;
+$blue_lighten: #409eff;
+$white: #fff;
+$white_darken: #F2F2F2;
+$white_darken_2: #F9F9F9;
+$yellow: #FFFF00;
+$orange: #F2994A;
+$orange_lighten: #E6A23C;
+$green: #6FCF97;
+$green_darken: #67C23A;
+$green_darken_2: #A39D2E;
+$green_darken_3: #34bfa3;
+$gray: #B5B4B4;
+$gray_darken: #828282;
+$gray_lighten: #E0E0E0;
+$gray_lighten_2: #909399;
+$red: #EE0033;
+$red_lighten: #FF7171;
+$red_lighten_2: #F78787;
+$red_lighten_3: #f56C6C;
+$purple: #800080;
+$purple_lighten_1: #803280;
+$input_black: #1f2937;
+
+$colors: (
+    'dark': $dark,
+    'dark_lighten': $dark_lighten,
+    'dark_lighten_2': $dark_lighten_2,
+    'dark_lighten_3': $dark_lighten_3,
+    'dard_lighten_4': $dark_lighten_4,
+    'blue': $blue,
+    'blue_darken': $blue_darken,
+    'blue_lighten': $blue_lighten,
+    'white': $white,
+    'white_darken': $white_darken,
+    'white_darken_2': $white_darken_2,
+    'yellow': $yellow,
+    'orange': $orange,
+    'orange_lighten': $orange_lighten,
+    'green': $green,
+    'green_darken': $green_darken,
+    'green_darken_2': $green_darken_2,
+    'green_darken_3': $green_darken_3,
+    'gray': $gray,
+    'gray_darken': $gray_darken,
+    'gray_lighten': $gray_lighten,
+    'gray_lighten_2': $gray_lighten_2,
+    'red': $red,
+    'red_lighten': $red_lighten,
+    'red_lighten_2': $red_lighten_2,
+    'red_lighten_3': $red_lighten_3,
+    'purple': $purple,
+    'purple_lighten_1': $purple_lighten_1,
+);
+
+@each $s, $i in $colors {
+    .#{$s}--bg {
+        background-color: #{$i} !important;
+        &:not([disabled]) {
+            &.hoverable:hover {
+                filter: brightness(110%);
+                transition: all 0.1s ease-in-out;
+            }
+            &.focusable:focus {
+                filter: brightness(110%);
+            }
+        }
+    }
+    .#{$s}--text {
+        color: #{$i} !important;
+    }
+    .#{$s}--hover:hover {
+        transition: 10ms;
+        background-color: lighten($i, 20%) !important;
+        border: lighten($i, 20%) !important;
+        cursor: pointer;
+    }
+    .#{$s}--text--hover:hover {
+        color: lighten($i, 20%) !important;
+        cursor: pointer;
+    }
+    .#{$s}--border {
+        border: 1px solid #{$i} !important;
+        border-radius: 4px;
+    }
+    .#{$s}--border--hover:hover {
+        border: 1px solid #{$i} !important;
+    }
+    .opacity-0--hover:hover {
+        opacity: 0;
+    }
+}
+
+@for $i from 0 through 50 {
+    $num: $i * 2;
+
+    $durations: (
+        't': 'top',
+        'b': 'bottom',
+        'l': 'left',
+        'r': 'right'
+    );
+
+    @each $key, $value in $durations {
+        .m#{$key}-#{$i} {
+            #{margin- + $value}: #{$num}px;
+        }
+        .p#{$key}-#{$i} {
+            #{padding- + $value}: #{$num}px !important;
+        }
+    }
+
+    .m-#{$i} {
+        margin: #{$num}px;
+    }
+    .mx-#{$i} {
+        margin-left: #{$num}px;
+        margin-right: #{$num}px;
+    }
+    .my-#{$i} {
+        margin-top: #{$num}px;
+        margin-bottom: #{$num}px;
+    }
+    .p-#{$i} {
+        padding: #{$num}px;
+    }
+    .px-#{$i} {
+        padding-left: #{$num}px;
+        padding-right: #{$num}px;
+    }
+    .py-#{$i} {
+        padding-top: #{$num}px;
+        padding-bottom: #{$num}px;
+    }
+}
+
+@for $i from 1 through 40 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width:  #{$i + '%'} !important;
+    }
+    .h-#{$i} {
+        height: #{$i + '%'} !important;
+    }
+
+    .mw-#{$i} {
+        max-width:  #{$i + '%'} !important;
+    }
+    .mh-#{$i} {
+        max-height: #{$i + '%'} !important;
+    }
+
+    .miw-#{$i} {
+        min-width:  #{$i + '%'} !important;
+    }
+    .mih-#{$i} {
+        min-height: #{$i + '%'} !important;
+    }
+}

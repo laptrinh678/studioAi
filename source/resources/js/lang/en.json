@@ -1,0 +1,251 @@
+{
+  "common": {
+    "nav_bar": {
+      "gen_image": "Generate image"
+    },
+    "form_config": {
+      "title": "Prompt",
+      "result": "Result",
+      "config": "Configuration",
+      "prompt_input": "Enter prompt for image generation",
+      "description_input": "Enter description",
+      "num_images": "Number of images",
+      "guidance_scale": "Creativity level",
+      "seed": "Diversity level",
+      "control_mode": "Control mode",
+      "prompt_style": "Image style",
+      "image_size": "Image size",
+      "main_color": "Main color",
+      "description_main_color": "Enter main color",
+      "scale": "Scale",
+      "width": "Width",
+      "height": "Height",
+      "image_width": "Width",
+      "image_height": "Height",
+      "name_voice": "Voice",
+      "name_mc": "Name MC",
+      "upload_image": "Drag and drop image or click to upload image",
+      "upload_voice": "Upload voice file",
+      "record": "Record voice",
+      "start_record": "Begin recording",
+      "end_record": "Finish recording",
+      "select_mc": "Select MC",
+      "text_input": "Enter text",
+      "sound_input": "Select voice",
+      "create_video": "Video generation",
+      "create_image": "Image generation",
+      "guidance_scale_option": ["Free", "Close to the prompt", "Fits the prompt"],
+      "seed_option": ["Fixed", "Random"],
+      "prompt_style_option": ["Default", "Anime", "Cartoon", "Photorealistic", "Landscape", "Fantasy", "Artistic", "Monochromatic"],
+      "control_mode_option": ["Canny", "Tile", "Depth", "Blur", "Pose", "Gray", "Low Quality"],
+      "openAI": "Optimize prompts using OpenAI"
+    },
+    "region": {
+      "norther": "Northern",
+      "central": "Central",
+      "southern": "Southern"
+    },
+    "hint": {
+      "seed": "Generates variations of the image when other parameters remain unchanged. If Random is selected, the generated image will change, if Fixed is selected, the generated image will not change.",
+      "guidance_scale": "It is the degree of match between the generated image and the user's prompt.",
+      "control_mode": "Different algorithms to generate new image from input image.",
+      "main_color": "The software will prioritize using this color when generating the image.",
+      "prompt_style": "It allows selection of output image types: Comic images, cartoon images, landscape images, monochrome images, etc."
+    },
+    "detail": "Detail",
+    "confirm": "Agree",
+    "cancel": "Cancel",
+    "total": "Total",
+    "choose_language": "Select language",
+    "user_info": "User information",
+    "confirm_delete": "Are you sure to delete this photo?",
+    "search": "Search",
+    "content_type": ["Text", "Upload file", "Record"],
+    "upload_file_mp3": "Upload file .mp3",
+    "warning_file_duration": "Note: Only upload file with a maximum duration of {maxDuration} seconds.",
+    "warning_record_duration": "Note: Maximum recording duration is {maxDuration} seconds.",
+    "estimate": "Estimate",
+    "content_required": "Content cannot be empty.",
+    "file_required": "No file selected. Please choose a file.",
+    "record_required": "You must record an audio file to proceed.",
+    "limit_file_time": "The maximum file duration is {maxDuration} seconds.",
+    "limit_resolution": "The maximum image resolution is ({width}x{height})",
+    "no_micro_device": "Recording device not detected.",
+    "save_scene": "SAVE SCENE",
+    "delete": "Delete",
+    "edit": "Edit",
+    "update": "Update",
+    "video_info": "Video information",
+    "loading": "Processing",
+    "update_success": "Update successful.",
+    "save_success": "Save successful.",
+    "delete_success": "Delete successful.",
+    "text_too_long": "The text is too long. Please shorten it.",
+    "prompt_required": "Please enter a prompt.",
+    "image_required": "Please select an image to upload.",
+    "stroke_required": "Image is required.",
+    "mask_required": "Please highlight the part of the image you want to modify.",
+    "catch_exception": "Something went wrong. Please try again.",
+    "logout": "Logout",
+    "max_width": "Maximum width",
+    "max_height": "Maximum height",
+    "warning": "Warning",
+    "warning_voice": "Incompatible voice.",
+    "copy_to_clipboard": "Copy to clipboard",
+    "copied": "Copied"
+  },
+  "warning_permission": "You don't have permission to use these functions. Please contact admin for activation via email {gmail}",
+  "text_to_image": {
+    "title": "Generate image from text"
+  },
+  "image_to_image": {
+    "title": "Generate image from similar image"
+  },
+  "in_painting": {
+    "title": "Edit image"
+  },
+  "sketch": {
+    "title": "Generate image from sketch",
+    "upload": "Upload sketch",
+    "draw": "Draw sketch"
+  },
+  "scale_image": {
+    "title": "UpScaling"
+  },
+  "mc_background": {
+    "title": "Virtual MC (green background)"
+  },
+  "mc_scene": {
+    "watch_video": "watch video",
+    "limit_duration": "The maximum total duration is {maxDuration} seconds.",
+    "title": "Virtual MC (multi scenes)",
+    "scene": {
+      "info": "Scene information",
+      "create": "Create a new scene",
+      "name": "Scene name",
+      "name_input": "Enter scene name",
+      "name_required": "The scene name field is required.",
+      "duration_input": "Scene duration (seconds)",
+      "min_duration": "Minimum scene duration is 1 second.",
+      "max_duration": "Maximum scene duration is {maxDuration} seconds.",
+      "confirm_delete": "Are you sure to delete this scene?",
+      "max_scene": "You can only create up to 10 scenes."
+    },
+    "project": {
+      "title": "Project",
+      "list": "Project list",
+      "create": "Create project",
+      "is_delete": "Do you really want to delete this project?",
+      "create_title": "Create project",
+      "name_input": "Enter project name",
+      "name": "Project name",
+      "name_required": "Project name is required.",
+      "delete_success": "Project deleted successfully.",
+      "warning_save_project": "There are unsaved changes. Are you sure you want to proceed?"
+    },
+    "mc": {
+      "title": "MC",
+      "list": "MC list",
+      "required": "MC not found"
+    },
+    "content": {
+      "title": "Content",
+      "list": "Content list",
+      "content_input": "VOICE CONTENT",
+      "apply": "APPLY",
+      "required": "Content cannot be empty.",
+      "invalid_format": "Invalid file format.",
+      "voice": "VOICE"
+    },
+    "background": {
+      "title": "Background",
+      "list": "Background list",
+      "select_background": "Select background",
+      "select_image": "Select image",
+      "warning": "Note: Please select an image with a resolution of 1280x720 pixels for best results."
+    },
+    "text": {
+      "title": "Text",
+      "create": "Add text",
+      "input": "Enter text"
+    },
+    "image_asset": {
+      "title": "Media store",
+      "list": "Uploaded media list",
+      "select_image_asset": "Media store management",
+      "apply": "APPLY",
+      "cancel": "CANCEL",
+      "list_upload": "UPLOADED MEDIA LIST",
+      "limit": "You can store maximum {maxImage} images",
+      "validate": {
+        "file_format": "Please upload image files only (png, jpg, jpeg).",
+        "file_size": "File size must be 4MB or less.",
+        "max_upload": "You can upload a maximum of {maxUploadFile} files."
+      }
+    }
+  },
+  "landing_page": {
+    "reused": "Clone",
+    "view": "View",
+    "like": "Like",
+    "share": "Share",
+    "clone": "Use this template",
+    "share_link": "Share Link"
+  },
+  "user_management": {
+    "left_bar": {
+      "permission": "Permission",
+      "prompt": "Prompt information"
+    },
+    "form": {
+      "email_input": "Enter email address",
+      "confirm_delete": "Are you sure to delete?",
+      "permission_title": "Permissions assigned",
+      "select_all": "Select all",
+      "available_date": "Available date",
+      "from_date": "Start date",
+      "to_date": "End date",
+      "prompt_input": "Enter prompt content"
+    },
+    "title": "User management",
+    "user": "User",
+    "permission_management": "User permission",
+    "user_prompt_management": "User's prompt",
+    "email_info": "Email information",
+    "email": "Email",
+    "name": "Name",
+    "no": "Order number",
+    "phone_number": "Phone",
+    "permission": "Permission",
+    "day": "Day",
+    "prompt_style": "Prompt style",
+    "date_time": "Time",
+    "no_data": "No data available",
+    "date_required": "Please enter the usage date.",
+    "date_invalid": "The end date must be after today.",
+    "start_gt_end": "The start date must not be greater than the end date.",
+    "detail_info": "Detail information",
+    "text_to_image": "Generate from text",
+    "image_to_image": "Generate from image",
+    "virtual_human": "Virtual presenter",
+    "virtual_human_v2": "Virtual presenter V2",
+    "prompt_original": "Prompt original",
+    "prompt_translate": "Prompt translate",
+    "prompt_open_ai": "OpenAI prompt",
+    "type": "Technology processing",
+    "execute_time": "Execution time (second)",
+    "status_code": "Status code",
+    "prompt_content": "Prompt",
+    "time": "Execution time",
+    "placeholder_generate_type": "Choose technology processing",
+    "placeholder_status_code": "Choose status code",
+    "time_error": "Invalid Time"
+  },
+  "error": {
+    "503": {
+      "title": "We are currently upgrading our system",
+      "message_1": "Please come back in approximately one hour!",
+      "message_2": "Thank you for your patience"
+    }
+  }
+}

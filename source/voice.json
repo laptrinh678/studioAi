@@ -1,0 +1,100 @@
+[
+  {
+    "region": "norther",
+    "region_name": "norther",
+    "entities": [
+      {
+        "code": "hn-quynhanh",
+        "name": "Quỳnh Anh (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hn-phuongtrang",
+        "name": "Phương Trang (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hn-thaochi",
+        "name": "Thảo Chi (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hn-thanhha",
+        "name": "Thanh Hà (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hn-thanhphuong",
+        "name": "Thanh Phương (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hn-thanhtung",
+        "name": "Thanh Tùng (Nam)",
+        "sex": "male"
+      },
+      {
+        "code": "hn-namkhanh",
+        "name": "Nam Khánh (Nam)",
+        "sex": "male"
+      },
+      {
+        "code": "hn-tienquan",
+        "name": "Tiến Quân (Nam)",
+        "sex": "male"
+      }
+    ]
+  },
+  {
+    "region": "central",
+    "region_name": "central",
+    "entities": [
+      {
+        "code": "hue-maingoc",
+        "name": "Mai Ngọc (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hue-baoquoc",
+        "name": "Bảo Quốc (Nam)",
+        "sex": "male"
+      }
+    ]
+  },
+  {
+    "region": "southern",
+    "region_name": "southern",
+    "entities": [
+      {
+        "code": "hcm-diemmy",
+        "name": "Diễm My (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hcm-phuongly",
+        "name": "Phương Ly (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hcm-thuydung",
+        "name": "Thùy Dung (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hcm-thuyduyen",
+        "name": "Thủy Duyên (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hn-leyen",
+        "name": "Lệ Yến (Nữ)",
+        "sex": "female"
+      },
+      {
+        "code": "hcm-minhquan",
+        "name": "Minh Quân (Nam)",
+        "sex": "male"
+      }
+    ]
+  }
+]

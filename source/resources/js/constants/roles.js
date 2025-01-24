@@ -1,0 +1,11 @@
+export const ROLE_ROOT = "root";
+export const ROLE_ADMIN = "admin";
+export const ROLE_USER = "user";
+export const ROLE_CC = "cc";
+export const ROLE_A2P = "a2p";
+export const ROLE_CSP = "csp";
+export const ROLE_POLITIC = "politic";
+export const ROLE_SMS2WAY = "sms2way";
+export const ROLE_ROAMING = "roaming";
+export const ROLE_OMNI_CONFIG = "editable_brandname";
+export const ROLE_OMNI_VIEW = "viewable_brandname";

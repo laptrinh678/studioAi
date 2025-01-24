@@ -1,0 +1,74 @@
+.m-content {
+    .video-js.vjs-custom-skin {
+        width: 387px !important;
+    }
+
+    padding: 10px 10px;
+    .videojs{
+
+        @media only screen {
+            .container{
+                max-width: 100%;
+                background: #f2f2f2;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                padding-right: 0px;
+                padding-left: 0px;
+                margin-right: auto;
+                margin-left: auto;
+                .play-video-js{
+                    .m-portlet__head{
+                        height: 0px;
+                    }
+                    .m-portlet__body{
+                        padding: 0px!important;
+                        margin-bottom: 20px;
+                        padding-bottom: 28px;
+                    }
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    #img-modal{
+                        //video{
+                        //    //margin-top: 30px;
+                        //    padding:0px 10px 0px 10px!important;
+                        //    //width: 387.5px;
+                        //    //height: 210px;
+                        //}
+
+                    }
+                    .space{
+                        padding: 0px 10px 0px 10px !important;
+                        width: 387.5px;
+                        height: 210px;
+                        background-color: #35353c;
+                    }
+
+                    .content{
+                        width: 100%;
+                        height: 22px;
+                        font-family: Averta;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #0085ff;
+                        background-color: #ffffff !important;
+                        text-align: center;
+                        padding: 28px;
+                        padding-bottom: 53px;
+                    }
+
+                }
+            }
+            .styleIcon{
+
+            }
+
+        }
+    }
+}
+

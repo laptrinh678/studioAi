@@ -1,0 +1,64 @@
+.header{
+    background-color: #f2f2f2 !important;
+    .header-left{
+        background-color: #f2f2f2 !important;
+    }
+    .header-right{
+        padding-left: 30px;
+        padding-top: 30px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        //.m-brand--skin-dark{
+        //    background-color: #f2f2f2 !important;
+        //
+        //}
+        .title{
+            margin: 0px 0px 0px 0px !important;
+            width: 333px;
+            height: 43px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal !important;
+            letter-spacing: normal;
+            color: #0085ff;
+            font-family: Averta;
+            font-weight: 300;
+            font-size: 36px;
+        }
+        .form-text{
+            //background-image: ;
+            width: 515px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #ffffff;
+            margin-left: 412px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            #icon{
+                width: 24px;
+                height: 24px;
+                margin-left: 19px;
+                margin-right: 11.5px   ;
+            }
+            .form-input{
+                height: 24px !important;
+                input{
+                    width: 451px!important;
+                    height: 24px;
+                    font-family: Averta;
+                    font-size: 13px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    padding: 0px 0px !important;
+                    color: #828282;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+

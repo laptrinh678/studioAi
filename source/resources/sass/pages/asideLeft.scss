@@ -1,0 +1,55 @@
+.m-menu__link-text{
+    color: black !important;
+}
+.aside-left{
+    background-color: #f2f2f2 !important;
+    .menus{
+        background-color: #f2f2f2 !important;
+        .m-menu__item--active{
+            .menu{
+                .menu-text{
+                    color: #0085ff !important;
+                }
+            }
+        }
+
+        .menu{
+            background-color: #f2f2f2 !important;
+            .menu-text{
+                font-family: Averta;
+                font-size: 13px !important;
+                font-weight: 800 !important;
+                font-stretcm-menu__item--activeh: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #333333 !important;
+            }
+            .menu-text-child{
+                width: 76px! important;
+                height: 16px! important;
+                font-family: Averta;
+                font-size: 13px! important;
+                font-weight: normal! important;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-indent: 20px;
+                color: #333333 !important;
+            }
+
+        }
+
+        .m-menu__item{
+            .m-menu__subnav{
+                .router-link-exact-active{
+                    .menu-text-child{
+                        color: #0085ff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
