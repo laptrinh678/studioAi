@@ -1,0 +1,35 @@
+networks:
+  ai-studio-network:
+    driver: bridge
+
+services:
+  ai-studio:
+    image: registry.cyberspace.vn/cybervision/stable_diffusion:v3.3.4
+    container_name: ai-studio
+    restart: always
+    networks:
+      - ai-studio-network
+    volumes:
+      - /usr/share/zoneinfo/Asia/Ho_Chi_Minh:/etc/localtime
+      - ./src:/var/www/html/stable
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    ports:
+      - "8091:8089"
+
+  stable-mongodb:
+    image: hub.vtcc.vn:8989/mongo:latest
+    container_name: stable-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: 'root'
+      MONGO_INITDB_ROOT_PASSWORD: 'Roger@123'
+      MONGO_INITDB_DATABASE: 'stable-diffusion'
+    networks:
+      - ai-studio-network
+    volumes:
+      - ../db_mongo:/data/db
